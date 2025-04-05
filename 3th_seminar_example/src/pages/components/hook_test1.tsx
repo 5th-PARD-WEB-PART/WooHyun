@@ -23,13 +23,11 @@ export default function HookTest1() {
     } else {
       setBgColor("bg-blue-400");
     }
-  }, [current]);
 
-  useEffect(() => {
     if (current !== 0 && current % 10 === 0) {
       console.log(`🎉 ${current}을(를) 넘었습니다!`);
     }
-  }, [current]); // current 값이 변경될 때 실행
+  }, [current]);
 
   return (
     <div>

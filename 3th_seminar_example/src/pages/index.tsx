@@ -2,7 +2,7 @@
 // import EventExample from "./components/event_example";
 // import HookExample1 from "./components/hook_example1";
 // import Form from "./components/Form";
-// import HookTest1 from "./components/hook_test1";
+import HookTest1 from "./components/hook_test1";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       {/* <HookExample1 /> */}
       {/* 훅 실습 예제 */}
 
-      {/* <HookTest1 /> */}
+      <HookTest1 />
       {/* 훅 실습 테스트1 */}
 
       {/* <Form /> */}
