@@ -6,6 +6,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold text-center bg-amber-500">
         2nd seminar practice
       </h1>
+      <p>wer</p>
       <Link href="/detail">
         <div className="text-2xl font-bold text-center text-amber-500 ">
           Go to detail page
