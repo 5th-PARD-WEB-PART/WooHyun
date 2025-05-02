@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 
 export default function HookTest1() {
   const [current, setCurrent] = useState<number>(0);
+  //bgColor의 초기값을 bg-blue-400으로 설정
   const [bgColor, setBgColor] = useState<string>("bg-blue-400");
 
   const setCountNumber = () => {
-    setCurrent((prev) => prev + 2);
+    setCurrent((prev) => prev + 1);
   };
 
   const setRestNumber = () => {
@@ -14,6 +15,7 @@ export default function HookTest1() {
 
   // current 값에 따라 배경색을 변경하는 useEffect
   useEffect(() => {
+    // current 값에 따라 배경색을 변경
     if (current >= 30) {
       setBgColor("bg-red-400");
     } else if (current >= 20) {
@@ -27,10 +29,11 @@ export default function HookTest1() {
     if (current !== 0 && current % 10 === 0) {
       console.log(`🎉 ${current}을(를) 넘었습니다!`);
     }
-  }, [current]);
+  }, []);
 
   return (
     <div>
+      {/** 배경색을 변경하는 div */}
       <div
         className={`${bgColor} text-6xl font-extrabold transition-colors duration-500`}
       >
